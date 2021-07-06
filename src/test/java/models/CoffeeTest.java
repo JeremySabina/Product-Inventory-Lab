@@ -5,12 +5,32 @@ import org.junit.jupiter.api.Test;
 
 public class CoffeeTest {
 
+    @Test
+    public void constructorTest() {
+        String expectedName = "Crazy Columbian";
+        String expectedBrand = "Joe's Joe";
+        String expectedFlavor = "Dark Roast";
+        String expectedAroma = "Chocolatey";
+        Integer expectedWeightInPounds = 5;
+        Integer expectedLiquidInOuncesAmount = 12;
+        Integer expectedCoffeeGrindAmount = 4;
+        Double expectedPrice = 21.99;
 
+
+        Coffee testCoffee = new Coffee(expectedName, expectedBrand, expectedFlavor, expectedAroma,
+                expectedWeightInPounds, expectedLiquidInOuncesAmount,
+                expectedCoffeeGrindAmount, expectedPrice);
+
+
+        Assertions.assertEquals(expectedName, testCoffee.getName());
+
+    }
     @Test
 
     public void setFlavorTest() {
         //given
-        Coffee coffee = new Coffee();
+
+        Coffee coffee = new Coffee("j");
         String expected = "Earthy";
 
         //when
@@ -26,7 +46,7 @@ public class CoffeeTest {
 
     public void setNameTest() {
         //given
-        Coffee coffee = new Coffee();
+        Coffee coffee = new Coffee("j");
         String expected = "Pike Place";
 
         //when
@@ -42,7 +62,7 @@ public class CoffeeTest {
 
     public void setBrandTest() {
         //given
-        Coffee coffee = new Coffee();
+        Coffee coffee = new Coffee("j");
         String expected = "Starbucks";
 
         //when
@@ -58,7 +78,7 @@ public class CoffeeTest {
 
     public void setAromaTest() {
         //given
-        Coffee coffee = new Coffee();
+        Coffee coffee = new Coffee("j");
         String expected = "Smokey";
 
         //when
@@ -73,7 +93,7 @@ public class CoffeeTest {
 
     public void setWeightInPoundsTest() {
         //given
-        Coffee coffee = new Coffee();
+        Coffee coffee = new Coffee(1);
         Integer expected = 10;
 
         //when
@@ -89,7 +109,7 @@ public class CoffeeTest {
 
     public void setLiquidInOuncesAmountTest() {
         //given
-        Coffee coffee = new Coffee();
+        Coffee coffee = new Coffee(1);
         Integer expected = 12;
 
         //when
@@ -104,7 +124,7 @@ public class CoffeeTest {
 
     public void setCoffeeGrindAmountTest() {
         //given
-        Coffee coffee = new Coffee();
+        Coffee coffee = new Coffee(1);
         Integer expected = 6;
 
         //when
@@ -119,7 +139,7 @@ public class CoffeeTest {
 
     public void setPriceTest() {
         //given
-        Coffee coffee = new Coffee();
+        Coffee coffee = new Coffee(5.00);
         Double expected = 5.67;
 
         //when

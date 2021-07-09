@@ -2,29 +2,6 @@ package models;
 
 public class Coffee {
 
-
-    public Coffee(String name) {
-        this.name = name;
-    }
-
-    public Coffee(String name, Integer weightInPounds) {
-        this.name = name;
-        this.weightInPounds = weightInPounds;
-    }
-
-    public Coffee(String name, String brand) {
-        this.name = name;
-        this.brand = brand;
-    }
-
-    public Coffee(Double price) {
-        this.price = price;
-    }
-
-    public Coffee(Integer weightInPounds) {
-        this.weightInPounds = weightInPounds;
-    }
-
     private String name = "";
     private String brand = "";
     private String flavor = "";
@@ -33,6 +10,7 @@ public class Coffee {
     private Integer liquidInOuncesAmount = 0;
     private Integer coffeeGrindAmount = 0;
     private Double price = 0.00;
+
 
     public Coffee(String name, String brand, String flavor,
                   String aroma, Integer weightInPounds,

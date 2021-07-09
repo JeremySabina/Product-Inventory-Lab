@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class CoffeeTest {
 
     @Test
-    public void constructorTest() {
+    public void CoffeeConstructorTest() {
         String expectedName = "Crazy Columbian";
         String expectedBrand = "Joe's Joe";
         String expectedFlavor = "Dark Roast";

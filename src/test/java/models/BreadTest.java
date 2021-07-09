@@ -2,8 +2,26 @@ package models;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import services.BreadServices;
 
 public class BreadTest {
+    @Test
+    public void constructorTest() {
+        String expectedName = "Wheat Bread";
+        String expectedFlavor = "Earthy";
+        String expectedAroma = "Rich";
+        String expectedFlourType = "Wheat";
+        Double expectedWeight = 12.00;
+        Double expectedPrice = 80.00;
+
+
+        Bread testBread = new Bread(expectedName, expectedFlavor,
+                expectedAroma, expectedFlourType, expectedWeight, expectedPrice);
+
+
+        Assertions.assertEquals(expectedName, testBread.getName());
+
+    }
 
     @Test
 

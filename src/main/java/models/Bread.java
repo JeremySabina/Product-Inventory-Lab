@@ -6,10 +6,20 @@ public class Bread {
     private String flavor = "";
     private String aroma = "";
     private String flourType = "";
-    private Integer quantity = 0;
     private Double weight = 0.00;
     private Double price = 0.00;
 
+    public Bread() {
+    }
+
+    public Bread(String name, String flavor, String aroma, String flourType, Double weight, Double price) {
+        this.name = name;
+        this.flavor = flavor;
+        this.aroma = aroma;
+        this.flourType = flourType;
+        this.weight = weight;
+        this.price = price;
+    }
 
     public String getName() {
         return name;
@@ -42,15 +52,6 @@ public class Bread {
     public void setFlourType(String flourType) {
         this.flourType = flourType;
     }
-
-    public Integer getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
-    }
-
     public Double getWeight() {
         return weight;
     }

@@ -27,6 +27,10 @@ public class Coffee {
         this.price = price;
     }
 
+    public Coffee() {
+
+    }
+
     public String getName() {
         return name;
     }

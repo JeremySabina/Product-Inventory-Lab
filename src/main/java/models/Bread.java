@@ -2,6 +2,7 @@ package models;
 
 public class Bread {
 
+    private Integer id = 0;
     private String name = "";
     private String flavor = "";
     private String aroma = "";
@@ -9,16 +10,21 @@ public class Bread {
     private Double weight = 0.00;
     private Double price = 0.00;
 
-    public Bread() {
-    }
 
-    public Bread(String name, String flavor, String aroma, String flourType, Double weight, Double price) {
+    public Bread(Integer id, String name, String flavor, String aroma, String flourType, Double weight, Double price) {
         this.name = name;
         this.flavor = flavor;
         this.aroma = aroma;
         this.flourType = flourType;
         this.weight = weight;
         this.price = price;
+        this.id = id;
+    }
+
+
+
+    public Bread() {
+
     }
 
     public String getName() {
@@ -68,4 +74,10 @@ public class Bread {
         this.price = price;
     }
 
+    public int getId() {
+        return this.id = id;
+    }
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }

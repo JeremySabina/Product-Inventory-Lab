@@ -30,7 +30,7 @@ public class CoffeeTest {
     public void setFlavorTest() {
         //given
 
-        Coffee coffee = new Coffee("j");
+        Coffee coffee = new Coffee();
         String expected = "Earthy";
 
         //when
@@ -46,7 +46,7 @@ public class CoffeeTest {
 
     public void setNameTest() {
         //given
-        Coffee coffee = new Coffee("j");
+        Coffee coffee = new Coffee();
         String expected = "Pike Place";
 
         //when
@@ -62,7 +62,7 @@ public class CoffeeTest {
 
     public void setBrandTest() {
         //given
-        Coffee coffee = new Coffee("j");
+        Coffee coffee = new Coffee();
         String expected = "Starbucks";
 
         //when
@@ -78,7 +78,7 @@ public class CoffeeTest {
 
     public void setAromaTest() {
         //given
-        Coffee coffee = new Coffee("j");
+        Coffee coffee = new Coffee();
         String expected = "Smokey";
 
         //when
@@ -93,7 +93,7 @@ public class CoffeeTest {
 
     public void setWeightInPoundsTest() {
         //given
-        Coffee coffee = new Coffee(1);
+        Coffee coffee = new Coffee();
         Integer expected = 10;
 
         //when
@@ -109,7 +109,7 @@ public class CoffeeTest {
 
     public void setLiquidInOuncesAmountTest() {
         //given
-        Coffee coffee = new Coffee(1);
+        Coffee coffee = new Coffee();
         Integer expected = 12;
 
         //when
@@ -124,7 +124,7 @@ public class CoffeeTest {
 
     public void setCoffeeGrindAmountTest() {
         //given
-        Coffee coffee = new Coffee(1);
+        Coffee coffee = new Coffee();
         Integer expected = 6;
 
         //when
@@ -139,7 +139,7 @@ public class CoffeeTest {
 
     public void setPriceTest() {
         //given
-        Coffee coffee = new Coffee(5.00);
+        Coffee coffee = new Coffee();
         Double expected = 5.67;
 
         //when

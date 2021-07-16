@@ -4,10 +4,11 @@ import models.Bread;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class BreadServiceTest {
+public class BreadServicesTest {
     @Test
     public void createTest(){
 
+        Integer expectedId = 012345;
         String expectedName = "Wheat Bread";
         String expectedFlavor = "Earthy";
         String expectedAroma = "Rich";

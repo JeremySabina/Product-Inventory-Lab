@@ -7,6 +7,7 @@ import services.BreadServices;
 public class BreadTest {
     @Test
     public void constructorTest() {
+        Integer expectedId = 012345;
         String expectedName = "Wheat Bread";
         String expectedFlavor = "Earthy";
         String expectedAroma = "Rich";
@@ -15,7 +16,7 @@ public class BreadTest {
         Double expectedPrice = 80.00;
 
 
-        Bread testBread = new Bread(expectedName, expectedFlavor,
+        Bread testBread = new Bread(expectedId, expectedName, expectedFlavor,
                 expectedAroma, expectedFlourType, expectedWeight, expectedPrice);
 
 
@@ -27,9 +28,9 @@ public class BreadTest {
 
     public void setNameTest() {
         //given
-        Bread bread = new Bread();
         String expected = "Rye";
         //when
+        Bread bread = new Bread();
         bread.setName(expected);
         String actual = bread.getName();
 
@@ -79,22 +80,6 @@ public class BreadTest {
         //when
         bread.setFlourType(expected);
         String actual = bread.getFlourType();
-
-
-        //then
-        Assertions.assertEquals(expected,actual);
-    }
-
-    @Test
-
-    public void setQuantityTest() {
-        //given
-        Bread bread = new Bread();
-        Integer expected = 0;
-
-        //when
-        bread.setQuantity(expected);
-        Integer actual = bread.getQuantity();
 
 
         //then

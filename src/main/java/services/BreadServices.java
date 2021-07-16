@@ -13,7 +13,7 @@ public class BreadServices {
             Bread createdBread = new Bread(nextId++, name, flavor, aroma,
                     flourType, weight, price);
 
-        inventory.add(createdBread);
+           // inventory.add(createdBread);
 
                     return createdBread;
     }

@@ -7,18 +7,18 @@ public class CoffeeTest {
 
     @Test
     public void CoffeeConstructorTest() {
+        Integer expectedId = 012345;
         String expectedName = "Crazy Columbian";
         String expectedBrand = "Joe's Joe";
         String expectedFlavor = "Dark Roast";
         String expectedAroma = "Chocolatey";
         Integer expectedWeightInPounds = 5;
-        Integer expectedLiquidInOuncesAmount = 12;
         Integer expectedCoffeeGrindAmount = 4;
         Double expectedPrice = 21.99;
 
 
-        Coffee testCoffee = new Coffee(expectedName, expectedBrand, expectedFlavor, expectedAroma,
-                expectedWeightInPounds, expectedLiquidInOuncesAmount,
+        Coffee testCoffee = new Coffee(expectedId, expectedName, expectedBrand, expectedFlavor, expectedAroma,
+                expectedWeightInPounds,
                 expectedCoffeeGrindAmount, expectedPrice);
 
 
@@ -99,22 +99,6 @@ public class CoffeeTest {
         //when
         coffee.setWeightInPounds(expected);
         Integer actual = coffee.getWeightInPounds();
-
-        //then
-        Assertions.assertEquals(expected,actual);
-    }
-
-
-    @Test
-
-    public void setLiquidInOuncesAmountTest() {
-        //given
-        Coffee coffee = new Coffee();
-        Integer expected = 12;
-
-        //when
-        coffee.setLiquidInOuncesAmount(expected);
-        Integer actual = coffee.getLiquidInOuncesAmount();
 
         //then
         Assertions.assertEquals(expected,actual);

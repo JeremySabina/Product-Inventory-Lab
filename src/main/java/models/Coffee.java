@@ -7,14 +7,13 @@ public class Coffee {
     private String flavor = "";
     private String aroma = "";
     private Integer weightInPounds = 0;
-    private Integer liquidInOuncesAmount = 0;
     private Integer coffeeGrindAmount = 0;
     private Double price = 0.00;
+    private int id = 0;
 
 
-    public Coffee(String name, String brand, String flavor,
+    public Coffee(Integer id, String name, String brand, String flavor,
                   String aroma, Integer weightInPounds,
-                  Integer liquidInOuncesAmount,
                   Integer coffeeGrindAmount, Double price)
     {
         this.name = name;
@@ -22,9 +21,9 @@ public class Coffee {
         this.flavor = flavor;
         this.aroma = aroma;
         this.weightInPounds = weightInPounds;
-        this.liquidInOuncesAmount = liquidInOuncesAmount;
         this.coffeeGrindAmount = coffeeGrindAmount;
         this.price = price;
+        this.id = id;
     }
 
     public Coffee() {
@@ -71,14 +70,6 @@ public class Coffee {
         this.weightInPounds = weightInPounds;
     }
 
-    public Integer getLiquidInOuncesAmount() {
-        return liquidInOuncesAmount;
-    }
-
-    public void setLiquidInOuncesAmount(Integer liquidInOuncesAmount) {
-        this.liquidInOuncesAmount = liquidInOuncesAmount;
-    }
-
     public Integer getCoffeeGrindAmount() {
         return coffeeGrindAmount;
     }
@@ -95,4 +86,7 @@ public class Coffee {
         this.price = price;
     }
 
+    public int getId() {
+        return id;
+    }
 }

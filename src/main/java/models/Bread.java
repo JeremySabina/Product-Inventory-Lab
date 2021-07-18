@@ -75,9 +75,7 @@ public class Bread {
     }
 
     public int getId() {
-        return this.id = id;
+        return id;
     }
-    public void setId(Integer id) {
-        this.id = id;
-    }
+
 }

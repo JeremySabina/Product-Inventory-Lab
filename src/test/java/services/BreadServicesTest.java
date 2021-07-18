@@ -8,7 +8,7 @@ public class BreadServicesTest {
     @Test
     public void createTest(){
 
-        Integer expectedId = 012345;
+
         String expectedName = "Wheat Bread";
         String expectedFlavor = "Earthy";
         String expectedAroma = "Rich";
@@ -17,7 +17,7 @@ public class BreadServicesTest {
         Double expectedPrice = 80.00;
 
 
-        BreadServices breadServices = new BreadServices();
+        BreadServices BreadServices = new BreadServices();
         Bread testBread = BreadServices.create(expectedName, expectedFlavor,
                 expectedAroma, expectedFlourType, expectedWeight, expectedPrice);
 
